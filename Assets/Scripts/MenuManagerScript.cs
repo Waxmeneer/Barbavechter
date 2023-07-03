@@ -9,7 +9,7 @@ public class MenuManagerScript : MonoBehaviour
     public GameObject charSelect1;
     public GameObject charSelect2;
     public GameObject options;
-
+    public AudioClip hardlyKnowHer;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +34,7 @@ public class MenuManagerScript : MonoBehaviour
         charSelectScreen.SetActive(true);
         charSelect1.SetActive(true);
         mainMenu.SetActive(false);
+        SoundManager.Instance.PlaySound(hardlyKnowHer);
     }
 
     public void GoToOptions()
