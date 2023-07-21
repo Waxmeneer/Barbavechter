@@ -42,6 +42,7 @@ public class LevelUIManager : MonoBehaviour
         if (player == 1)
         {
             player1Percentage.text = damage.ToString() + "%";
+            player1Percentage.GetComponent<Animator>().SetTrigger("GotHit");
         }
         else if (player == 2)
         {
