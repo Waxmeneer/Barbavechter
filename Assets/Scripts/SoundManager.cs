@@ -31,4 +31,15 @@ public class SoundManager : MonoBehaviour
     {
           _musicSource.PlayOneShot(clip);
     }
+
+    public void StopSound()
+    {
+        _effectsSource.Stop();
+    }
+
+    public void StopMusic()
+    {
+        _musicSource.Stop();
+    }
+
 }
