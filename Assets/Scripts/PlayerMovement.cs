@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,9 +12,19 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public bool canMove;
 
+    public UnityEvent OnLandEvent;
+    [System.Serializable]
+    public class BoolEvent : UnityEvent<bool> { }
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+
+    private void Awake()
+    {
+        if (OnLandEvent == null)
+            OnLandEvent = new UnityEvent();
+    }
 
     private void Start()
     {
@@ -31,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetButtonDown("Jump") && IsGrounded())
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+                //animator.SetBool("IsJumping", true);
             }
 
             if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
@@ -53,6 +65,11 @@ public class PlayerMovement : MonoBehaviour
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+    }
+
+    public void OnLanding()
+    {
+
     }
 
     private void Flip()

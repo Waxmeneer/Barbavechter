@@ -9,6 +9,9 @@ public class PlayerHealth : MonoBehaviour
     //[HideInInspector]
     public float percentage;
     public int player;
+    public Transform spawnPoint;
+    public AudioClip deathSound;
+    public AudioClip takeDamageSound;
 
     // Start is called before the first frame update
     void Start()
@@ -20,17 +23,48 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
 
-    public void LoseLife()
-    {
-        //loselife code
     }
 
     public void TakeDamage(float damage)
     {
         percentage += damage;
         LevelUIManager.Instance.UpdatePercentage(percentage, player);
+
+        if (Random.Range(1,4) >= 3)
+        {
+            SoundManager.Instance.PlaySound(takeDamageSound);
+        }
+    }
+
+    public void Die()
+    {
+        LevelUIManager.Instance.UpdateLives(player, lives);
+        lives -= 1;
+        percentage = 0;
+        SoundManager.Instance.PlaySound(deathSound);
+        if (lives != 0)
+        {
+            StartCoroutine(ResetSequence());
+        }
+        else if (lives == 0)
+        {
+            //Victorysequence!
+        }
+    }
+
+    private IEnumerator ResetSequence()
+    {
+        Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
+        LevelUIManager.Instance.UpdatePercentage(percentage, player);
+        gameObject.transform.position = (Vector2)spawnPoint.position + new Vector2(100, 100);
+        rigidbody.velocity = (Vector2.zero);
+        rigidbody.isKinematic = true;
+
+        yield return new WaitForSeconds(2);
+
+        gameObject.transform.position = spawnPoint.position;
+        rigidbody.isKinematic = false;
+        yield return null;
     }
 }
