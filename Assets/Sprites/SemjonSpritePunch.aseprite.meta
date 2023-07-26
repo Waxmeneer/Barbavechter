@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7ccf5dde911fd5d4d971192597e67078
+guid: 39052f55929fb4c4aa79e3a3e6bf073e
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,58 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: WouterSpritePunch
+  - name: SemjonSpritePunch
     originalName: 
-    pivot: {x: 0.45454547, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 42
-      y: 45
-      width: 22
-      height: 29
-    spriteID: 6fb85e52762469c4eaec67b1ad2563b9
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 42, y: 45}
-  - name: WouterSpritePunch_Frame_1
-    originalName: 
-    pivot: {x: 0.45454547, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 72
-      y: 45
-      width: 22
-      height: 29
-    spriteID: 33bac2821c40ef64fbbfe01cac4deaaa
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 72, y: 45}
-  - name: WouterSpritePunch_Frame_2
-    originalName: 
-    pivot: {x: 0.3255814, y: 0}
+    pivot: {x: 0.4615385, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 43
-      height: 33
-    spriteID: 2c0e7150b2804824699934e7ba9361cd
+      width: 26
+      height: 32
+    spriteID: 8d99ceb804b7d4047880e42c1a03da1d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -179,98 +139,26 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: WouterSpritePunch_Frame_3
-    originalName: 
-    pivot: {x: 0.26666668, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 45
-      width: 30
-      height: 41
-    spriteID: 73e0ce8a773113a4bb73abd07291bbce
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 45}
-  - name: WouterSpritePunch_Frame_4
-    originalName: 
-    pivot: {x: 0.31707317, y: -0.45833334}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 55
-      y: 4
-      width: 41
-      height: 24
-    spriteID: 040463c1faeb31c44b83486646dcb2ff
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 55, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1184666477
-    name: WouterSpritePunch
+    guid: -2035047815
+    name: SemjonSpritePunch
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: WouterSpritePunch_Frame_0
+    - name: SemjonSpritePunch
       frameIndex: 0
       cellRect:
-        x: 22
+        x: 4
         y: 0
-        width: 22
-        height: 29
-      spriteId: 6fb85e52762469c4eaec67b1ad2563b9
-    - name: WouterSpritePunch_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 22
-        y: 0
-        width: 22
-        height: 29
-      spriteId: 33bac2821c40ef64fbbfe01cac4deaaa
-    - name: WouterSpritePunch_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 18
-        y: 0
-        width: 43
-        height: 33
-      spriteId: 2c0e7150b2804824699934e7ba9361cd
-    - name: WouterSpritePunch_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 24
-        y: 0
-        width: 30
-        height: 41
-      spriteId: 73e0ce8a773113a4bb73abd07291bbce
-    - name: WouterSpritePunch_Frame_4
-      frameIndex: 4
-      cellRect:
-        x: 19
-        y: 11
-        width: 41
-        height: 24
-      spriteId: 040463c1faeb31c44b83486646dcb2ff
+        width: 26
+        height: 32
+      spriteId: 8d99ceb804b7d4047880e42c1a03da1d
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 48}
+  canvasSize: {x: 32, y: 32}
