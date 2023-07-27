@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c5c049b84513704fa35375cb7601e0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpInterval: 3
+  jumpInterval: 1
   jumpVelocity: 50
   gravity: -100
 --- !u!4 &69685209
@@ -5179,7 +5179,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: c1c5d8d80aee6944187b9e80c64f00c0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 0.7
+  m_Pitch: 0.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -15574,7 +15574,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: c1c5d8d80aee6944187b9e80c64f00c0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 0.75
+  m_Pitch: 0.55
   Loop: 0
   Mute: 0
   Spatialize: 0
