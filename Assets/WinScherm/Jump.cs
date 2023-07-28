@@ -14,9 +14,12 @@ public class Jump : MonoBehaviour
     private float _timeInAnimation;
     private Vector3 _jumpVector;
 
+    AudioSource audioData;
+
     // Start is called before the first frame update
     void Start()
     {
+        audioData = GetComponent<AudioSource>();
         _startPosition = gameObject.transform.position;
     }
 
@@ -28,6 +31,7 @@ public class Jump : MonoBehaviour
         {
             if ( _timeInAnimation <= _jumpTime )
             {
+                audioData.Play();
                 state = 1;
             }
         }
