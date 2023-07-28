@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class winnerAnnouncer : MonoBehaviour
 {
-    public float delayTime = 3.0f;
+    public float delayTime = 2.5f;
     public float delayTime2 = 5.0f;
     public AudioClip winAnnouncerAudio;
     public AudioClip characterNameAudio;
-    public AudioClip winMusicAudio;
+    public AudioClip winScoreAudio;
     AudioSource audioData;
 
     private float _startTime;
@@ -33,7 +33,8 @@ public class winnerAnnouncer : MonoBehaviour
         }
         if (Time.time > (_startTime + delayTime2) && state == 1)
         {
-            audioData.clip = winMusicAudio;
+            audioData.clip = winScoreAudio;
+            audioData.volume = 0.4f;
             audioData.Play(0);
             state = 2;
         }
