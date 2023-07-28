@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f5be8a496f5110e4da04c0eb05a5275b
+guid: 5d0b0985c7fbeef4c8fc73752a831316
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 16
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638261687080745618
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,38 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: SemjonSpriteRangedAttack
+  - name: SanderSpriteIdle_Frame_0
     originalName: 
-    pivot: {x: 0.6774193, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 55
-      width: 31
-      height: 45
-    spriteID: eb631ed0ee7554b45ab0e0a3e40db2a7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 55}
-  - name: SemjonSpriteRangedAttack_Frame_1
-    originalName: 
-    pivot: {x: 0.6511628, y: 0}
+    pivot: {x: 0.6666667, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 43
-      height: 43
-    spriteID: 244083c8207bf9849bf735cd104567c0
+      width: 24
+      height: 32
+    spriteID: 4508ccbad904b624db10e3ed6d6fb1d5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,18 +139,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: SemjonSpriteRangedAttack_Frame_2
+  - name: SanderSpriteIdle_Frame_1
     originalName: 
-    pivot: {x: 0.43243244, y: 0}
+    pivot: {x: 0.6666667, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 55
+      x: 36
       y: 4
-      width: 37
-      height: 32
-    spriteID: b6d6a48a83662bc4fb13dbcf46e3795f
+      width: 24
+      height: 31
+    spriteID: a8893c9ac9abfe24a99aabc53c561859
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -178,43 +158,83 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 55, y: 4}
+    uvTransform: {x: 36, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1456603098
-    name: SemjonSpriteRangedAttack
+    guid: 1506868504
+    name: SanderSpriteIdle
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: SemjonSpriteRangedAttack_Frame_0
+    - name: SanderSpriteIdle_Frame_0
       frameIndex: 0
       cellRect:
-        x: 11
+        x: 0
         y: 0
-        width: 31
-        height: 45
-      spriteId: eb631ed0ee7554b45ab0e0a3e40db2a7
-    - name: SemjonSpriteRangedAttack_Frame_1
+        width: 24
+        height: 32
+      spriteId: 4508ccbad904b624db10e3ed6d6fb1d5
+    - name: SanderSpriteIdle_Frame_1
       frameIndex: 1
       cellRect:
-        x: 4
+        x: 0
         y: 0
-        width: 43
-        height: 43
-      spriteId: 244083c8207bf9849bf735cd104567c0
-    - name: SemjonSpriteRangedAttack_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 16
-        y: 0
-        width: 37
-        height: 32
-      spriteId: b6d6a48a83662bc4fb13dbcf46e3795f
+        width: 24
+        height: 31
+      spriteId: a8893c9ac9abfe24a99aabc53c561859
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 48}
+  canvasSize: {x: 32, y: 32}

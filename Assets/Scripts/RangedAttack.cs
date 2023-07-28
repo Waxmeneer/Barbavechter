@@ -32,7 +32,9 @@ public class RangedAttack : MonoBehaviour
         GetComponentInParent<PlayerMovement>().canMove = false;
         GetComponentInParent<Rigidbody2D>().velocity = Vector2.zero;
 
-        animator.SetBool("Attack", true);
+        animator.SetBool("RangedAttack", true);
+        yield return new WaitForEndOfFrame();
+        animator.SetBool("RangedAttack", false);
         canAttack = false;
 
         GameObject projectile = Instantiate(projectilePF, spawnLocation.position, Quaternion.identity);
@@ -47,8 +49,7 @@ public class RangedAttack : MonoBehaviour
         }
 
         yield return new WaitForSeconds(attackEnd);
-        animator.SetBool("Attack", false);
-
+      
         canAttack = true;
         GetComponentInParent<PlayerMovement>().canMove = true;
 

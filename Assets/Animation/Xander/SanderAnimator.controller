@@ -47,7 +47,8 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -44933927652075763, guid: 772ce3bbe749b0e4dab14923295a2967, type: 3}
+  m_Motion: {fileID: -4412249306583859844, guid: 8f2b7532d5afc834980ac7c0a803f6dd,
+    type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -99,7 +100,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: dca46c7abc1efb548924cd6e9637fe9b, type: 2}
+  m_Motion: {fileID: 7400000, guid: 7afb1413426200b4aa3577c64afd5232, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -136,7 +137,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WalterAnimator
+  m_Name: SanderAnimator
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Speed
@@ -217,7 +218,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 1448429068811271407, guid: be417ab99cc65bd4eb28fde29f50f896,
+  m_Motion: {fileID: -8691045469153292926, guid: 5d0b0985c7fbeef4c8fc73752a831316,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
