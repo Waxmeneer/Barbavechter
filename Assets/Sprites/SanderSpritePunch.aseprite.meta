@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 772ce3bbe749b0e4dab14923295a2967
+guid: bcedc255230599e41a38e3c1923b18db
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 16
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638260658725773784
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,58 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: WouterSpriteRun_Frame_0
+  - name: SanderSpritePunch_Frame_0
     originalName: 
-    pivot: {x: 0.5714286, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 44
-      width: 28
-      height: 32
-    spriteID: 6f4be87ee77183f42873d8cbce335043
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 44}
-  - name: WouterSpriteRun_Frame_1
-    originalName: 
-    pivot: {x: 0.5357143, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 41
-      y: 4
-      width: 28
-      height: 30
-    spriteID: 6065fe4387f0e8b43a2bcace7601abd8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 41, y: 4}
-  - name: WouterSpriteRun_Frame_2
-    originalName: 
-    pivot: {x: 0.55172414, y: 0}
+    pivot: {x: 0.5217391, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 29
+      width: 23
       height: 32
-    spriteID: 91be081a97311274cb17cb17d08df7aa
+    spriteID: e43cc301c0698974f97f9a0a69890beb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -179,18 +139,38 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: WouterSpriteRun_Frame_3
+  - name: SanderSpritePunch_Frame_1
     originalName: 
-    pivot: {x: 0.55172414, y: 0}
+    pivot: {x: 0.5217391, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 44
+      width: 23
+      height: 32
+    spriteID: d55ee8f66cb7dff4286fe7cacdc1f0ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 44}
+  - name: SanderSpritePunch_Frame_2
+    originalName: 
+    pivot: {x: 0.5217391, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 84
-      width: 29
-      height: 30
-    spriteID: 68310af506d11b54ca45d6f63afb918a
+      width: 23
+      height: 32
+    spriteID: 02535330275c40c4aaaef36347b58f4d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -199,98 +179,182 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 84}
+  - name: SanderSpritePunch_Frame_3
+    originalName: 
+    pivot: {x: 0.5217391, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 4
+      width: 23
+      height: 32
+    spriteID: db7ae5b2ce2ce84468f92120f35a3d8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 4}
+  - name: SanderSpritePunch_Frame_4
+    originalName: 
+    pivot: {x: 0.5909091, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 44
+      width: 22
+      height: 30
+    spriteID: 44cde9b6f2080a3498f966ec383c24d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 44}
+  - name: SanderSpritePunch_Frame_5
+    originalName: 
+    pivot: {x: 0.5909091, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 82
+      width: 22
+      height: 30
+    spriteID: ad5506c2cb634d748ad59ccf975deeda
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 82}
+  - name: SanderSpritePunch_Frame_6
+    originalName: 
+    pivot: {x: 0.5909091, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 4
+      width: 22
+      height: 30
+    spriteID: 1377b78e01bbd7741ac47bedc3e5f3de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 4}
+  - name: SanderSpritePunch_Frame_7
+    originalName: 
+    pivot: {x: 0.5909091, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 42
+      width: 22
+      height: 30
+    spriteID: 786499d51d56c344da54bdbc85b9d5bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 42}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -507962828
-    name: WouterSpriteRun
+    guid: 540530686
+    name: SanderSpritePunch
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: WouterSpriteRun_Frame_0
+    - name: SanderSpritePunch_Frame_0
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 4
         y: 0
-        width: 28
+        width: 23
         height: 32
-      spriteId: 6f4be87ee77183f42873d8cbce335043
-    - name: WouterSpriteRun_Frame_1
+      spriteId: e43cc301c0698974f97f9a0a69890beb
+    - name: SanderSpritePunch_Frame_1
       frameIndex: 1
       cellRect:
-        x: 1
+        x: 4
         y: 0
-        width: 28
-        height: 30
-      spriteId: 6065fe4387f0e8b43a2bcace7601abd8
-    - name: WouterSpriteRun_Frame_2
+        width: 23
+        height: 32
+      spriteId: d55ee8f66cb7dff4286fe7cacdc1f0ec
+    - name: SanderSpritePunch_Frame_2
       frameIndex: 2
       cellRect:
-        x: 0
+        x: 4
         y: 0
-        width: 29
+        width: 23
         height: 32
-      spriteId: 91be081a97311274cb17cb17d08df7aa
-    - name: WouterSpriteRun_Frame_3
+      spriteId: 02535330275c40c4aaaef36347b58f4d
+    - name: SanderSpritePunch_Frame_3
       frameIndex: 3
       cellRect:
-        x: 0
+        x: 4
         y: 0
-        width: 29
+        width: 23
+        height: 32
+      spriteId: db7ae5b2ce2ce84468f92120f35a3d8d
+    - name: SanderSpritePunch_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 3
+        y: 0
+        width: 22
         height: 30
-      spriteId: 68310af506d11b54ca45d6f63afb918a
+      spriteId: 44cde9b6f2080a3498f966ec383c24d3
+    - name: SanderSpritePunch_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 3
+        y: 0
+        width: 22
+        height: 30
+      spriteId: ad5506c2cb634d748ad59ccf975deeda
+    - name: SanderSpritePunch_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 3
+        y: 0
+        width: 22
+        height: 30
+      spriteId: 1377b78e01bbd7741ac47bedc3e5f3de
+    - name: SanderSpritePunch_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 3
+        y: 0
+        width: 22
+        height: 30
+      spriteId: 786499d51d56c344da54bdbc85b9d5bf
     linkedCells: []
     parentIndex: -1
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Server
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: WebGL
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}

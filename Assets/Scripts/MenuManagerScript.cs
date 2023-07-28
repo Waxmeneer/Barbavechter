@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuManagerScript : MonoBehaviour
 {
@@ -18,10 +19,37 @@ public class MenuManagerScript : MonoBehaviour
     [HideInInspector]
     public int currentPlayer;
 
+    Dictionary<Button, GameObject> selectbuttons = new Dictionary<Button, GameObject>();
+    public Button semmieSelect;
+    public Button mansaurusSelect;
+    public Button menxSelect;
+    public Button xanderSelect;
+    public Button daenSelect;
+    public Button walterSelect;
+
+    public GameObject semmie;
+    public GameObject mansaurus;
+    public GameObject menx;
+    public GameObject xander;
+    public GameObject daen;
+    public GameObject walter;
+
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(this);
+        selectbuttons.Add(semmieSelect, semmie);
+        selectbuttons.Add(mansaurusSelect, mansaurus);
+        selectbuttons.Add(menxSelect, menx);
+        selectbuttons.Add(xanderSelect, xander);
+        selectbuttons.Add(daenSelect, daen);
+        selectbuttons.Add(walterSelect, walter);
+
+        foreach(KeyValuePair<Button, GameObject> pair in selectbuttons)
+        {
+            pair.Key.onClick.RemoveAllListeners();
+            pair.Key.onClick.AddListener(delegate { FighterManager.Instance.ChooseFighter(pair.Value, currentPlayer); });
+        }
+
         currentPlayer = 1;
         whichPlayer.text = "Speler 1, kies je vechter!";
     }
@@ -80,7 +108,7 @@ public class MenuManagerScript : MonoBehaviour
     {
         if (currentPlayer == 1)
         {
-            currentPlayer = 2;
+            //currentPlayer = 2;
             whichPlayer.text = "Speler 2, kies je vechter!";
             whichPlayer.color = Color.blue;
         }

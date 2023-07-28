@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 772ce3bbe749b0e4dab14923295a2967
+guid: 2738f5d1154dff74cb71c51dde3ecdd4
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 16
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638260658725773784
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: WouterSpriteRun_Frame_0
+  - name: MaxSpritePunch
     originalName: 
-    pivot: {x: 0.5714286, y: 0}
+    pivot: {x: 0.6, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 44
-      width: 28
-      height: 32
-    spriteID: 6f4be87ee77183f42873d8cbce335043
+      x: 102
+      y: 54
+      width: 20
+      height: 45
+    spriteID: 8aa6a63998afdf249a5d8b570c247394
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -138,19 +138,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 44}
-  - name: WouterSpriteRun_Frame_1
+    uvTransform: {x: 102, y: 54}
+  - name: MaxSpritePunch_Frame_1
     originalName: 
-    pivot: {x: 0.5357143, y: 0}
+    pivot: {x: 0.8, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 41
+      x: 59
       y: 4
-      width: 28
-      height: 30
-    spriteID: 6065fe4387f0e8b43a2bcace7601abd8
+      width: 40
+      height: 32
+    spriteID: 335f3e99ea728c14aa8021fa25a4d65a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -158,19 +158,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 41, y: 4}
-  - name: WouterSpriteRun_Frame_2
+    uvTransform: {x: 59, y: 4}
+  - name: MaxSpritePunch_Frame_2
     originalName: 
-    pivot: {x: 0.55172414, y: 0}
+    pivot: {x: 0.31914893, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 29
-      height: 32
-    spriteID: 91be081a97311274cb17cb17d08df7aa
+      width: 47
+      height: 42
+    spriteID: 61358e0ca4e5efa429d8483fa67af480
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -179,18 +179,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: WouterSpriteRun_Frame_3
+  - name: MaxSpritePunch_Frame_3
     originalName: 
-    pivot: {x: 0.55172414, y: 0}
+    pivot: {x: 0.2195122, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 84
-      width: 29
-      height: 30
-    spriteID: 68310af506d11b54ca45d6f63afb918a
+      y: 54
+      width: 41
+      height: 43
+    spriteID: 1b814b6bc8afcfb48ae7ae893229fe8f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -198,99 +198,79 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 84}
+    uvTransform: {x: 4, y: 54}
+  - name: MaxSpritePunch_Frame_4
+    originalName: 
+    pivot: {x: 0.2195122, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 54
+      width: 41
+      height: 31
+    spriteID: 791af2b34fe38264db6599df145f09d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 54}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -507962828
-    name: WouterSpriteRun
+    guid: -1031625031
+    name: MaxSpritePunch
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: WouterSpriteRun_Frame_0
+    - name: MaxSpritePunch_Frame_0
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 20
         y: 0
-        width: 28
-        height: 32
-      spriteId: 6f4be87ee77183f42873d8cbce335043
-    - name: WouterSpriteRun_Frame_1
+        width: 20
+        height: 45
+      spriteId: 8aa6a63998afdf249a5d8b570c247394
+    - name: MaxSpritePunch_Frame_1
       frameIndex: 1
       cellRect:
-        x: 1
+        x: 0
         y: 0
-        width: 28
-        height: 30
-      spriteId: 6065fe4387f0e8b43a2bcace7601abd8
-    - name: WouterSpriteRun_Frame_2
+        width: 40
+        height: 32
+      spriteId: 335f3e99ea728c14aa8021fa25a4d65a
+    - name: MaxSpritePunch_Frame_2
       frameIndex: 2
       cellRect:
-        x: 0
+        x: 17
         y: 0
-        width: 29
-        height: 32
-      spriteId: 91be081a97311274cb17cb17d08df7aa
-    - name: WouterSpriteRun_Frame_3
+        width: 47
+        height: 42
+      spriteId: 61358e0ca4e5efa429d8483fa67af480
+    - name: MaxSpritePunch_Frame_3
       frameIndex: 3
       cellRect:
-        x: 0
+        x: 23
         y: 0
-        width: 29
-        height: 30
-      spriteId: 68310af506d11b54ca45d6f63afb918a
+        width: 41
+        height: 43
+      spriteId: 1b814b6bc8afcfb48ae7ae893229fe8f
+    - name: MaxSpritePunch_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 23
+        y: 0
+        width: 41
+        height: 31
+      spriteId: 791af2b34fe38264db6599df145f09d6
     linkedCells: []
     parentIndex: -1
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Server
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: WebGL
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
+  canvasSize: {x: 64, y: 48}
