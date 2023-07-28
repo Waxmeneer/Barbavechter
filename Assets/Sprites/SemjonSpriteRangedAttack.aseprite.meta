@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 772ce3bbe749b0e4dab14923295a2967
+guid: f5be8a496f5110e4da04c0eb05a5275b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 16
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638260658725773784
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: WouterSpriteRun_Frame_0
+  - name: SemjonSpriteRangedAttack
     originalName: 
-    pivot: {x: 0.5714286, y: 0}
+    pivot: {x: 0.6774193, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 44
-      width: 28
-      height: 32
-    spriteID: 6f4be87ee77183f42873d8cbce335043
+      y: 55
+      width: 31
+      height: 45
+    spriteID: eb631ed0ee7554b45ab0e0a3e40db2a7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -138,39 +138,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 44}
-  - name: WouterSpriteRun_Frame_1
+    uvTransform: {x: 4, y: 55}
+  - name: SemjonSpriteRangedAttack_Frame_1
     originalName: 
-    pivot: {x: 0.5357143, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 41
-      y: 4
-      width: 28
-      height: 30
-    spriteID: 6065fe4387f0e8b43a2bcace7601abd8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 41, y: 4}
-  - name: WouterSpriteRun_Frame_2
-    originalName: 
-    pivot: {x: 0.55172414, y: 0}
+    pivot: {x: 0.6511628, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 29
-      height: 32
-    spriteID: 91be081a97311274cb17cb17d08df7aa
+      width: 43
+      height: 43
+    spriteID: 244083c8207bf9849bf735cd104567c0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -179,18 +159,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: WouterSpriteRun_Frame_3
+  - name: SemjonSpriteRangedAttack_Frame_2
     originalName: 
-    pivot: {x: 0.55172414, y: 0}
+    pivot: {x: 0.43243244, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 84
-      width: 29
-      height: 30
-    spriteID: 68310af506d11b54ca45d6f63afb918a
+      x: 55
+      y: 4
+      width: 37
+      height: 32
+    spriteID: b6d6a48a83662bc4fb13dbcf46e3795f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -198,99 +178,43 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 84}
+    uvTransform: {x: 55, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -507962828
-    name: WouterSpriteRun
+    guid: 1456603098
+    name: SemjonSpriteRangedAttack
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: WouterSpriteRun_Frame_0
+    - name: SemjonSpriteRangedAttack_Frame_0
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 11
         y: 0
-        width: 28
-        height: 32
-      spriteId: 6f4be87ee77183f42873d8cbce335043
-    - name: WouterSpriteRun_Frame_1
+        width: 31
+        height: 45
+      spriteId: eb631ed0ee7554b45ab0e0a3e40db2a7
+    - name: SemjonSpriteRangedAttack_Frame_1
       frameIndex: 1
       cellRect:
-        x: 1
+        x: 4
         y: 0
-        width: 28
-        height: 30
-      spriteId: 6065fe4387f0e8b43a2bcace7601abd8
-    - name: WouterSpriteRun_Frame_2
+        width: 43
+        height: 43
+      spriteId: 244083c8207bf9849bf735cd104567c0
+    - name: SemjonSpriteRangedAttack_Frame_2
       frameIndex: 2
       cellRect:
-        x: 0
+        x: 16
         y: 0
-        width: 29
+        width: 37
         height: 32
-      spriteId: 91be081a97311274cb17cb17d08df7aa
-    - name: WouterSpriteRun_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 0
-        y: 0
-        width: 29
-        height: 30
-      spriteId: 68310af506d11b54ca45d6f63afb918a
+      spriteId: b6d6a48a83662bc4fb13dbcf46e3795f
     linkedCells: []
     parentIndex: -1
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Server
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: WebGL
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
+  canvasSize: {x: 64, y: 48}

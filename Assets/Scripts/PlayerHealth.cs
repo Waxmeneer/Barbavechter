@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -20,12 +23,6 @@ public class PlayerHealth : MonoBehaviour
         percentage = 0;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void TakeDamage(float damage)
     {
         percentage += damage;
@@ -42,14 +39,15 @@ public class PlayerHealth : MonoBehaviour
         LevelUIManager.Instance.UpdateLives(player, lives);
         lives -= 1;
         percentage = 0;
-        SoundManager.Instance.PlaySound(deathSound);
+        //SoundManager.Instance.PlaySound(deathSound);
         if (lives != 0)
         {
             StartCoroutine(ResetSequence());
         }
         else if (lives == 0)
         {
-            //Victorysequence!
+            GameManager.Instance.PlayerRanOutOfLives(player);
+            //gameObject.SetActive(false);
         }
     }
 
@@ -66,5 +64,10 @@ public class PlayerHealth : MonoBehaviour
         gameObject.transform.position = spawnPoint.position;
         rigidbody.isKinematic = false;
         yield return null;
+    }
+
+    public void GetSpawnPoint()
+    {
+        spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoints").transform.GetChild(player - 1);
     }
 }
