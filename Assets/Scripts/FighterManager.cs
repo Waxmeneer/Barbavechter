@@ -14,9 +14,10 @@ public class FighterManager : MonoBehaviour
     public GameObject fighterThree;
     public GameObject fighterFour;
     public MenuManagerScript mainMenuManager;
-    private List<GameObject> fighterPrefabs;
     //public List<GameObject> fighters;
     public int winningplayer;
+
+    public Dictionary<int, string> winnerDict = new Dictionary<int, string>();
 
     // Singleton instance reference.
     private static FighterManager instance;

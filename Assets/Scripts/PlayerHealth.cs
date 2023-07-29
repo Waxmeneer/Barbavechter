@@ -17,6 +17,7 @@ public class PlayerHealth : MonoBehaviour
     public AudioClip deathSound;
     public AudioClip takeDamageSound;
     public Sprite portrait;
+    public string nameString;
 
     // Start is called before the first frame update
     void Start()
