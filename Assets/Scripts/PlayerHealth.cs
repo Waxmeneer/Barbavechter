@@ -22,7 +22,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LevelUIManager.Instance.SetPortrait(player, portrait);
+        LevelUIManager.Instance.SetPortrait(player, portrait, nameString);
         lives = 3;
         percentage = 0;
     }
