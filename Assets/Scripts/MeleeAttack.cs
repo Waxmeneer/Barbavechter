@@ -43,7 +43,10 @@ public class MeleeAttack : MonoBehaviour
         GetComponentInParent<Rigidbody2D>().velocity = Vector2.zero;
         if(attackCall != null)
         {
-            SoundManager.Instance.PlaySound(attackCall);
+            if (Random.Range(1,4) == 4)
+            {
+                SoundManager.Instance.PlaySound(attackCall);
+            }
         }
 
         animator.SetBool("Attack", true);
@@ -96,7 +99,7 @@ public class MeleeAttack : MonoBehaviour
 
     private AudioClip PickRandomHitSound()
     {
-        AudioClip clip = audioClips[Random.Range(1, audioClips.Count)];
+        AudioClip clip = audioClips[Random.Range(0, audioClips.Count)];
         return clip;
     }
 }
