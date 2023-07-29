@@ -6,8 +6,6 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    public int winNumber = 0;
-    public Dictionary<int, string> playerDict = new Dictionary<int, string>();
     public GameObject winnerObject;
     public GameObject loserObject;
 
@@ -24,6 +22,8 @@ public class MenuManager : MonoBehaviour
     public Sprite spriteMansaurus;
     public Sprite spriteSemmySemtex;
 
+    private static int _winNumber = 0;
+    private Dictionary<int, string> _playerDict = new();
     private AudioClip _winnerAudio;
     private Sprite _winnerSprite;
     private Sprite _loserSprite;
@@ -100,22 +100,26 @@ public class MenuManager : MonoBehaviour
     IEnumerator LateStart()
     {
         yield return new WaitForEndOfFrame();
-
-        if (playerDict.Count == 0)
+        if (FighterManager.Instance != null)
         {
-            playerDict.Add(0, "Walter");
-            playerDict.Add(1, "Daen");
+            _winNumber = FighterManager.Instance.winningplayer;
+            _playerDict = FighterManager.Instance.winnerDict;
+        }
+        if (_playerDict.Count == 0)
+        {
+            _playerDict.Add(0, "Walter");
+            _playerDict.Add(1, "Daen");
         }
 
-        _name = playerDict[winNumber];
+        _name = _playerDict[_winNumber];
         _winnerSprite = playerNameToSprite(_name);
         _winnerAudio = playerNameToWinAudio(_name);
-        _secNumber = winNumber;
-        while (_secNumber == winNumber)
+        _secNumber = _winNumber;
+        while (_secNumber == _winNumber)
         {
-            _secNumber = Random.Range(1, playerDict.Count);
+            _secNumber = Random.Range(1, _playerDict.Count);
         }
-        _name = playerDict[_secNumber];
+        _name = _playerDict[_secNumber];
         _loserSprite = playerNameToSprite(_name);
         announcer.characterNameAudio = _winnerAudio;
         winnerObject.GetComponent<SpriteRenderer>().sprite = _winnerSprite;
