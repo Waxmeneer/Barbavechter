@@ -65,7 +65,7 @@ Transform:
   m_Children:
   - {fileID: 3122190876300554180}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3978627993309424380
 SpriteRenderer:
@@ -173,7 +173,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.05}
-  m_Size: {x: 1.5, y: 0.8}
+  m_Size: {x: 15, y: 15}
   m_Direction: 1
 --- !u!50 &209731918178814194
 Rigidbody2D:
