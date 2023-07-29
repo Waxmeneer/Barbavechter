@@ -5,6 +5,7 @@ using UnityEngine;
 public class RandomMusic : MonoBehaviour
 {
     public List<AudioClip> audioClips = new List<AudioClip>();
+    public AudioSource music;
 
     // Start is called before the first frame update
     void Start()
