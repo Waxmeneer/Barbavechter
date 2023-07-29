@@ -27,23 +27,27 @@ public class LevelUIManager : MonoBehaviour
         }
     }
 
-    public void SetPortrait(int player, Sprite portrait)
+    public void SetPortrait(int player, Sprite portrait, string playerName)
     {
         if (player == 1)
         {
             player1UI.SetPortrait(portrait);
+            player1UI.playerName.text = playerName;
         }
         if (player == 2)
         {
             player2UI.SetPortrait(portrait);
+            player2UI.playerName.text = playerName;
         }
         if (player == 3)
         {
             player3UI.SetPortrait(portrait);
+            player3UI.playerName.text = playerName;
         }
         if (player == 4)
         {
             player4UI.SetPortrait(portrait);
+            player4UI.playerName.text = playerName;
         }
     }
 
