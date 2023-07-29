@@ -138,7 +138,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1.7
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3.5
@@ -189,6 +189,7 @@ MonoBehaviour:
   isFacingRight: 1
   animator: {fileID: 2546460518702729991}
   canMove: 0
+  justHit: 0
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -217,7 +218,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 1c8011050120ba04c901304eb6ec9b9e, type: 3}
   takeDamageSound: {fileID: 8300000, guid: 119669446c7004d478c3c250b0b9036c, type: 3}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: fd28710194bfd4249aaf6c6b4d80ad92, type: 3}
   nameString: Walter
 --- !u!1 &740356542089205150
 GameObject:
@@ -296,8 +297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ae04c1a0062f04f86c3fd7b4f5dcd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackStrength: 12
-  damage: 9
+  attackStrength: 9
+  damage: 10
   launchDir: {fileID: 6453028067920146956}
   animator: {fileID: 2546460518702729991}
   audioClips:
@@ -308,6 +309,7 @@ MonoBehaviour:
   hitBoxEnd: 0.15
   attackEnd: 0.1
   hitCoolDown: 0
+  hitStun: 0.5
 --- !u!61 &4409507732392470134
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -377,7 +379,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7322646482751039210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.07, z: 0}
+  m_LocalPosition: {x: -1.88, y: -1.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

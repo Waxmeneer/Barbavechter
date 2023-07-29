@@ -58,6 +58,7 @@ MonoBehaviour:
   hitBoxEnd: 0.54
   attackEnd: 0
   hitCoolDown: 0.01
+  hitStun: 0.5
 --- !u!61 &6679155665045683061
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127,7 +128,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097887802680205128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.84, y: -0.32, z: 0}
+  m_LocalPosition: {x: -0.84, y: -0.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -336,7 +337,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1.7
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3.5
@@ -387,6 +388,7 @@ MonoBehaviour:
   isFacingRight: 1
   animator: {fileID: 867845082958473985}
   canMove: 0
+  justHit: 0
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -415,7 +417,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 1c8011050120ba04c901304eb6ec9b9e, type: 3}
   takeDamageSound: {fileID: 8300000, guid: 119669446c7004d478c3c250b0b9036c, type: 3}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 14ca5bb6917ea8d448ae8c09e4de6980, type: 3}
   nameString: SemmySemtex
 --- !u!114 &3980447549975545909
 MonoBehaviour:

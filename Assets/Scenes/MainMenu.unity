@@ -8860,7 +8860,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076598245}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9c1c9e3f60cf5445aad856ae4e50691, type: 3}
   m_Name: 
@@ -13635,6 +13635,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fighterOne: {fileID: 0}
   fighterTwo: {fileID: 0}
+  fighterThree: {fileID: 0}
+  fighterFour: {fileID: 0}
   mainMenuManager: {fileID: 1663469511}
   winningplayer: 0
 --- !u!4 &2084853802
