@@ -35,7 +35,7 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D otherCollider)
     {
-        print("hit something");
+        //print("hit something");
         //Logic where people take damage
         if (otherCollider.gameObject.GetComponent<Rigidbody2D>() != null && hitCooledDown == true)
         {

@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isFacingRight = true;
     public Animator animator;
     public bool canMove;
+    public bool justHit = false;
 
     public UnityEvent OnLandEvent;
     [System.Serializable]
@@ -63,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (canMove)
+        if (canMove & !justHit)
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
         }
@@ -77,6 +78,14 @@ public class PlayerMovement : MonoBehaviour
     public void OnLanding()
     {
 
+    }
+
+    public IEnumerator GotHit(float hitStun)
+    {
+        justHit = true;
+        yield return new WaitForSeconds(hitStun);
+        justHit = false;
+        yield return null;
     }
 
     private void Flip()

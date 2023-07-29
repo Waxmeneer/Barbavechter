@@ -16,6 +16,7 @@ public class MeleeAttack : MonoBehaviour
     public float hitBoxEnd;
     public float attackEnd;
     public float hitCoolDown;
+    public float hitStun;
 
     private bool hitCooledDown = true;
 
@@ -63,14 +64,16 @@ public class MeleeAttack : MonoBehaviour
         if (otherCollider.gameObject.GetComponent<Rigidbody2D>() != null && hitCooledDown == true)
         {
             SoundManager.Instance.PlaySound(PickRandomHitSound());
+            StartCoroutine(otherCollider.GetComponent<PlayerMovement>().GotHit(hitStun));
 
-            Vector2 self = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
+            Vector2 selfLoc = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
             Vector2 otherLoc = new Vector2(otherCollider.transform.position.x, otherCollider.transform.position.y);
-            Vector2 dir = (Vector2)launchDir.position - otherLoc;
+            Vector2 dir = (Vector2)launchDir.position - selfLoc;
+            print(dir);
 
             float percentage = otherCollider.GetComponent<PlayerHealth>().percentage;
 
-            otherCollider.gameObject.GetComponent<Rigidbody2D>().AddForce(((dir) * (attackStrength * (percentage/100f + 1))), ForceMode2D.Impulse);
+            otherCollider.gameObject.GetComponent<Rigidbody2D>().AddForce(dir * (attackStrength * (percentage / 100f + 1.0f)), ForceMode2D.Impulse);
 
             otherCollider.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
 
