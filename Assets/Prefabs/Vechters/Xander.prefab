@@ -108,7 +108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783046104792434752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.61, y: 1.42, z: 0}
+  m_LocalPosition: {x: 1.68, y: 2.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -163,8 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ae04c1a0062f04f86c3fd7b4f5dcd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackStrength: 19
-  damage: 18
+  attackStrength: 12
+  damage: 12
   launchDir: {fileID: 2571300215939882811}
   animator: {fileID: 7664270749830142877}
   audioClips:
@@ -545,8 +545,8 @@ MonoBehaviour:
   projectilePF: {fileID: 6497562306490212284, guid: 0d47a443c1325d34b8c9192391e7ad88,
     type: 3}
   spawnLocation: {fileID: 2470616556272759828}
-  force: 6
-  attackEnd: 1
+  force: 1.6
+  attackEnd: 0.8
 --- !u!1 &4510396522745747315
 GameObject:
   m_ObjectHideFlags: 0

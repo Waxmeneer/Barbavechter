@@ -281,8 +281,8 @@ MonoBehaviour:
   projectilePF: {fileID: 865573636184572915, guid: be67561d5b0705e4abbabb01b97138ad,
     type: 3}
   spawnLocation: {fileID: 7303814623742194842}
-  force: 6
-  attackEnd: 1
+  force: 1.6
+  attackEnd: 0.8
 --- !u!1 &2584755381756651441
 GameObject:
   m_ObjectHideFlags: 0

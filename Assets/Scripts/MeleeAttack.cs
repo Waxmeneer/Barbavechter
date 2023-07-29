@@ -53,6 +53,7 @@ public class MeleeAttack : MonoBehaviour
         canAttack = false;
         yield return new WaitForEndOfFrame();
         animator.SetBool("Attack", false);
+        gameObject.GetComponent<Collider2D>().enabled = false;
         yield return new WaitForSeconds(hitBoxDelay);
         gameObject.GetComponent<Collider2D>().enabled = true;
         yield return new WaitForSeconds(hitBoxEnd);

@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fd9ad231196da48bd4b0cad40fbdc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackStrength: 7
+  attackStrength: 11
   damage: 8
   launchDir: {fileID: 2505806358418505539}
   audioClips:
@@ -195,7 +195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8376393564168066044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.698, y: 0.406, z: 0}
+  m_LocalPosition: {x: 1.217, y: 0.805, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

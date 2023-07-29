@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2546460518702729991}
   - component: {fileID: 252893766670477809}
   - component: {fileID: 9197805520065318519}
+  - component: {fileID: 5047672358874176987}
   m_Layer: 0
   m_Name: Walter
   m_TagString: Untagged
@@ -220,6 +221,24 @@ MonoBehaviour:
   takeDamageSound: {fileID: 8300000, guid: 119669446c7004d478c3c250b0b9036c, type: 3}
   portrait: {fileID: 21300000, guid: fd28710194bfd4249aaf6c6b4d80ad92, type: 3}
   nameString: Walter
+--- !u!114 &5047672358874176987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290267474880750343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48812306768a8ce4caa59bd7312ee14e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2546460518702729991}
+  projectilePF: {fileID: 4307795855610327474, guid: 02f63a50963c3484c9ed4fb4c160abcc,
+    type: 3}
+  spawnLocation: {fileID: 0}
+  force: 1.6
+  attackEnd: 0.8
 --- !u!1 &740356542089205150
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,9 +326,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8f0903988a396f94eb6dfd8050ab2a8d, type: 3}
   hitBoxDelay: 0.2
   hitBoxEnd: 0.15
-  attackEnd: 0.1
+  attackEnd: 0
   hitCoolDown: 0
   hitStun: 0.5
+  attackCall: {fileID: 0}
 --- !u!61 &4409507732392470134
 BoxCollider2D:
   m_ObjectHideFlags: 0

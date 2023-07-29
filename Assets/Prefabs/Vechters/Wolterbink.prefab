@@ -238,8 +238,8 @@ MonoBehaviour:
   projectilePF: {fileID: 2088218466772026625, guid: 2f7c7b7eabc019e4f81d7dc93eb2a309,
     type: 3}
   spawnLocation: {fileID: 1317869195448682478}
-  force: 8
-  attackEnd: 1
+  force: 1.6
+  attackEnd: 0.8
 --- !u!1 &2953490293653793540
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,6 +330,7 @@ MonoBehaviour:
   attackEnd: 0
   hitCoolDown: 0.2
   hitStun: 0.5
+  attackCall: {fileID: 0}
 --- !u!61 &6942363689517352635
 BoxCollider2D:
   m_ObjectHideFlags: 0

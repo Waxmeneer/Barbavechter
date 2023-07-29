@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fd9ad231196da48bd4b0cad40fbdc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackStrength: 4
+  attackStrength: 11
   damage: 6
   launchDir: {fileID: 813495467252546643}
   audioClips:

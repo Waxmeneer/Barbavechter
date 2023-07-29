@@ -59,6 +59,7 @@ MonoBehaviour:
   attackEnd: 0
   hitCoolDown: 0.01
   hitStun: 0.5
+  attackCall: {fileID: 0}
 --- !u!61 &6679155665045683061
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -435,5 +436,5 @@ MonoBehaviour:
   projectilePF: {fileID: 6497562306490212284, guid: 0d47a443c1325d34b8c9192391e7ad88,
     type: 3}
   spawnLocation: {fileID: 9214416445131422254}
-  force: 8
-  attackEnd: 1
+  force: 1.6
+  attackEnd: 0.8
