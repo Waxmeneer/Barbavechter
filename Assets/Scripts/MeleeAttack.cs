@@ -17,6 +17,7 @@ public class MeleeAttack : MonoBehaviour
     public float attackEnd;
     public float hitCoolDown;
     public float hitStun;
+    public AudioClip attackCall;
 
     private bool hitCooledDown = true;
 
@@ -40,6 +41,10 @@ public class MeleeAttack : MonoBehaviour
     {
         GetComponentInParent<PlayerMovement>().canMove = false;
         GetComponentInParent<Rigidbody2D>().velocity = Vector2.zero;
+        if(attackCall != null)
+        {
+            SoundManager.Instance.PlaySound(attackCall);
+        }
 
         animator.SetBool("Attack", true);
         canAttack = false;
