@@ -110,9 +110,9 @@ public class PlayerMovement : MonoBehaviour
         if (GetComponent<PlayerHealth>().player == 3)
         {
             horizontalAxis = "Player3Horizontal";
-            jumpButton = KeyCode.Alpha0;
-            attackButton = KeyCode.Alpha7;
-            rangedAttackButton = KeyCode.Alpha9;
+            jumpButton = KeyCode.Keypad0;
+            attackButton = KeyCode.Keypad7;
+            rangedAttackButton = KeyCode.Keypad9;
         }
         if (GetComponent<PlayerHealth>().player == 4)
         {
