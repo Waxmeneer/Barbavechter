@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a4937fcaf5bc1d6439429348b38e9134
+guid: f7f885ffa9b87b643a0955cd2c7633f5
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638262252764829721
+  platformSettingsDirtyTick: 638262259194578145
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,38 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: SanderSpriteBase
+  - name: MenxSpriteRun_Frame_0
     originalName: 
-    pivot: {x: 0.6666667, y: 0}
+    pivot: {x: 0.5714286, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 43
+      width: 21
+      height: 32
+    spriteID: 12dc637b9b10b754282e1eaffcae7aaa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 43}
+  - name: MenxSpriteRun_Frame_1
+    originalName: 
+    pivot: {x: 0.53846157, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 24
-      height: 32
-    spriteID: b330e5b3636cd0d45828c7f41385665b
+      width: 26
+      height: 31
+    spriteID: a2c8e283845118d4cadde634e85ac5be
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,23 +159,87 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: MenxSpriteRun_Frame_2
+    originalName: 
+    pivot: {x: 0.55, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 4
+      width: 20
+      height: 32
+    spriteID: 11c3432176df00344aec5258761f9cac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 4}
+  - name: MenxSpriteRun_Frame_3
+    originalName: 
+    pivot: {x: 0.5714286, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 83
+      width: 21
+      height: 31
+    spriteID: fcd727b1146bff842819f07a1cf7e21c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 83}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1817308495
-    name: SanderSpriteBase
+    guid: 1867040660
+    name: MenxSpriteRun
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: SanderSpriteBase
+    - name: MenxSpriteRun_Frame_0
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 4
         y: 0
-        width: 24
+        width: 21
         height: 32
-      spriteId: b330e5b3636cd0d45828c7f41385665b
+      spriteId: 12dc637b9b10b754282e1eaffcae7aaa
+    - name: MenxSpriteRun_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 2
+        y: 0
+        width: 26
+        height: 31
+      spriteId: a2c8e283845118d4cadde634e85ac5be
+    - name: MenxSpriteRun_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 5
+        y: 0
+        width: 20
+        height: 32
+      spriteId: 11c3432176df00344aec5258761f9cac
+    - name: MenxSpriteRun_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 4
+        y: 0
+        width: 21
+        height: 31
+      spriteId: fcd727b1146bff842819f07a1cf7e21c
     linkedCells: []
     parentIndex: -1
   platformSettings:

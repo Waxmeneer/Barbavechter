@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f7f885ffa9b87b643a0955cd2c7633f5
+guid: 49757ed8b005bd045ad956643954224a
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 16
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638262256341485343
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,38 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: MenxSpriteRun_Frame_0
+  - name: MansoerSpriteIdle_Frame_0
     originalName: 
-    pivot: {x: 0.5714286, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 43
-      width: 21
-      height: 32
-    spriteID: 12dc637b9b10b754282e1eaffcae7aaa
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 43}
-  - name: MenxSpriteRun_Frame_1
-    originalName: 
-    pivot: {x: 0.53846157, y: 0}
+    pivot: {x: 0.44444445, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 26
-      height: 31
-    spriteID: a2c8e283845118d4cadde634e85ac5be
+      width: 27
+      height: 32
+    spriteID: e9538b020dfca0e4cb0d71ff55bd0e05
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,38 +139,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: MenxSpriteRun_Frame_2
+  - name: MansoerSpriteIdle_Frame_1
     originalName: 
-    pivot: {x: 0.55, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 38
-      y: 4
-      width: 20
-      height: 32
-    spriteID: 11c3432176df00344aec5258761f9cac
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 38, y: 4}
-  - name: MenxSpriteRun_Frame_3
-    originalName: 
-    pivot: {x: 0.5714286, y: 0}
+    pivot: {x: 0.44444445, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 83
-      width: 21
+      y: 44
+      width: 27
       height: 31
-    spriteID: fcd727b1146bff842819f07a1cf7e21c
+    spriteID: 4ac5758164bb3cd4cbaf76d470a4e7cf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -198,51 +158,83 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 83}
+    uvTransform: {x: 4, y: 44}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1867040660
-    name: MenxSpriteRun
+    guid: 1970363888
+    name: MansoerSpriteIdle
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: MenxSpriteRun_Frame_0
+    - name: MansoerSpriteIdle_Frame_0
       frameIndex: 0
       cellRect:
         x: 4
         y: 0
-        width: 21
+        width: 27
         height: 32
-      spriteId: 12dc637b9b10b754282e1eaffcae7aaa
-    - name: MenxSpriteRun_Frame_1
+      spriteId: e9538b020dfca0e4cb0d71ff55bd0e05
+    - name: MansoerSpriteIdle_Frame_1
       frameIndex: 1
-      cellRect:
-        x: 2
-        y: 0
-        width: 26
-        height: 31
-      spriteId: a2c8e283845118d4cadde634e85ac5be
-    - name: MenxSpriteRun_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 5
-        y: 0
-        width: 20
-        height: 32
-      spriteId: 11c3432176df00344aec5258761f9cac
-    - name: MenxSpriteRun_Frame_3
-      frameIndex: 3
       cellRect:
         x: 4
         y: 0
-        width: 21
+        width: 27
         height: 31
-      spriteId: fcd727b1146bff842819f07a1cf7e21c
+      spriteId: 4ac5758164bb3cd4cbaf76d470a4e7cf
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}

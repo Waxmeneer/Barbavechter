@@ -12,8 +12,11 @@ public class RangedAttack : MonoBehaviour
     public float attackEnd;
     private PlayerMovement playerMovement;
 
+    private KeyCode rangedAttackButton;
+
     private void Start()
     {
+        rangedAttackButton = GetComponent<PlayerMovement>().rangedAttackButton;
         playerMovement = GetComponent<PlayerMovement>();
         canAttack = true;
     }
@@ -21,7 +24,7 @@ public class RangedAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("y") && canAttack)
+        if (Input.GetKeyDown(rangedAttackButton) && canAttack)
         {
             StartCoroutine(DoAttack());
         }

@@ -19,10 +19,17 @@ public class MeleeAttack : MonoBehaviour
 
     private bool hitCooledDown = true;
 
+    private KeyCode attackButton;
+
+    private void Start()
+    {
+        attackButton = GetComponentInParent<PlayerMovement>().attackButton;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("t") && canAttack)
+        if (Input.GetKeyDown(attackButton) && canAttack)
         {
             StartCoroutine(DoAttack());
         }
@@ -59,7 +66,7 @@ public class MeleeAttack : MonoBehaviour
 
             Vector2 self = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
             Vector2 otherLoc = new Vector2(otherCollider.transform.position.x, otherCollider.transform.position.y);
-            Vector2 dir = (Vector2)launchDir.position - self;
+            Vector2 dir = (Vector2)launchDir.position - otherLoc;
 
             float percentage = otherCollider.GetComponent<PlayerHealth>().percentage;
 

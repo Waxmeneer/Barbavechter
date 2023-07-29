@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a4937fcaf5bc1d6439429348b38e9134
+guid: e5212823a29fed146b92bbe67a9e6a0c
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638262252764829721
+  platformSettingsDirtyTick: 638262259739781442
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: SanderSpriteBase
+  - name: WolterbinkSpriteIdle_Frame_0
     originalName: 
-    pivot: {x: 0.6666667, y: 0}
+    pivot: {x: 0.6, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 24
+      width: 20
       height: 32
-    spriteID: b330e5b3636cd0d45828c7f41385665b
+    spriteID: c894548659771cd4fa08581f0a599c7c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,23 +139,51 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: WolterbinkSpriteIdle_Frame_1
+    originalName: 
+    pivot: {x: 0.6, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 4
+      width: 20
+      height: 31
+    spriteID: faf24d84b085ecb4a9b43709fb146590
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1817308495
-    name: SanderSpriteBase
+    guid: 1934891566
+    name: WolterbinkSpriteIdle
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: SanderSpriteBase
+    - name: WolterbinkSpriteIdle_Frame_0
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 4
         y: 0
-        width: 24
+        width: 20
         height: 32
-      spriteId: b330e5b3636cd0d45828c7f41385665b
+      spriteId: c894548659771cd4fa08581f0a599c7c
+    - name: WolterbinkSpriteIdle_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 4
+        y: 0
+        width: 20
+        height: 31
+      spriteId: faf24d84b085ecb4a9b43709fb146590
     linkedCells: []
     parentIndex: -1
   platformSettings:

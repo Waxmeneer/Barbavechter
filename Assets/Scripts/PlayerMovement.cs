@@ -20,10 +20,17 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+    private string horizontalAxis;
+    private KeyCode jumpButton;
+    public KeyCode attackButton;
+    public KeyCode rangedAttackButton;
+
     private void Awake()
     {
         if (OnLandEvent == null)
             OnLandEvent = new UnityEvent();
+
+        SetControls();
     }
 
     private void Start()
@@ -34,12 +41,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
+        horizontal = Input.GetAxisRaw(horizontalAxis);
 
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
         if (canMove)
         {
-            if (Input.GetButtonDown("Jump") && IsGrounded())
+            if (Input.GetKeyDown(jumpButton) && IsGrounded())
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
                 //animator.SetBool("IsJumping", true);
@@ -82,4 +89,38 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+
+
+    private void SetControls()
+    { 
+        if (GetComponent<PlayerHealth>().player == 1)
+        {
+            horizontalAxis = "Horizontal";
+            jumpButton = KeyCode.M;
+            attackButton = KeyCode.Period;
+            rangedAttackButton = KeyCode.Comma;
+        }
+        if (GetComponent<PlayerHealth>().player == 2)
+        {
+            horizontalAxis = "Player2Horizontal";
+            jumpButton = KeyCode.Space;
+            attackButton = KeyCode.Q;
+            rangedAttackButton = KeyCode.E;
+        }
+        if (GetComponent<PlayerHealth>().player == 3)
+        {
+            horizontalAxis = "Player3Horizontal";
+            jumpButton = KeyCode.Alpha0;
+            attackButton = KeyCode.Alpha7;
+            rangedAttackButton = KeyCode.Alpha9;
+        }
+        if (GetComponent<PlayerHealth>().player == 4)
+        {
+            horizontalAxis = "Player4Horizontal";
+            jumpButton = KeyCode.Y;
+            attackButton = KeyCode.U;
+            rangedAttackButton = KeyCode.I;
+        }
+    }
+
 }

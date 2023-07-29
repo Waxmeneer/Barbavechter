@@ -8,7 +8,9 @@ using System.Linq;
 public class LevelUIManager : MonoBehaviour
 {
     public PlayerUI player1UI;
-    public PlayerUI player2UI; 
+    public PlayerUI player2UI;
+    public PlayerUI player3UI;
+    public PlayerUI player4UI;
 
     public static LevelUIManager Instance { get; private set; }
     private void Awake()
@@ -25,6 +27,26 @@ public class LevelUIManager : MonoBehaviour
         }
     }
 
+    public void SetPortrait(int player, Sprite portrait)
+    {
+        if (player == 1)
+        {
+            player1UI.SetPortrait(portrait);
+        }
+        if (player == 2)
+        {
+            player2UI.SetPortrait(portrait);
+        }
+        if (player == 3)
+        {
+            player3UI.SetPortrait(portrait);
+        }
+        if (player == 4)
+        {
+            player4UI.SetPortrait(portrait);
+        }
+    }
+
     public void UpdatePercentage(float damage, int player)
     {
         if (player == 1)
@@ -37,12 +59,34 @@ public class LevelUIManager : MonoBehaviour
             player2UI.percentage.text = damage.ToString() + "%";
             player2UI.animator.SetTrigger("GotHit");
         }
+        else if (player == 3)
+        {
+            player3UI.percentage.text = damage.ToString() + "%";
+            player3UI.animator.SetTrigger("GotHit");
+        }
+        else if (player == 4)
+        {
+            player4UI.percentage.text = damage.ToString() + "%";
+            player4UI.animator.SetTrigger("GotHit");
+        }
 
     }
 
     public void UpdateLives(int player, int lives)
     {
-        if (player == 1)
+        if (player == 1 && lives != 0)
+        {
+            player1UI.playerLives[lives - 1].enabled = false;
+        }
+        if (player == 2 && lives != 0)
+        {
+            player2UI.playerLives[lives - 1].enabled = false;
+        }
+        if (player == 3 && lives != 0)
+        {
+            player3UI.playerLives[lives - 1].enabled = false;
+        }
+        if (player == 4 && lives != 0)
         {
             player1UI.playerLives[lives - 1].enabled = false;
         }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -15,10 +16,12 @@ public class PlayerHealth : MonoBehaviour
     public Transform spawnPoint;
     public AudioClip deathSound;
     public AudioClip takeDamageSound;
+    public Sprite portrait;
 
     // Start is called before the first frame update
     void Start()
     {
+        LevelUIManager.Instance.SetPortrait(player, portrait);
         lives = 3;
         percentage = 0;
     }
@@ -39,7 +42,7 @@ public class PlayerHealth : MonoBehaviour
         LevelUIManager.Instance.UpdateLives(player, lives);
         lives -= 1;
         percentage = 0;
-        //SoundManager.Instance.PlaySound(deathSound);
+        SoundManager.Instance.PlaySound(deathSound);
         if (lives != 0)
         {
             StartCoroutine(ResetSequence());
