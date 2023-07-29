@@ -98,8 +98,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(4f);
         Time.timeScale = 1f;
         //LoadnewScene
-        SceneManager.LoadScene(0);
-
+        SceneManager.LoadScene(2);
         yield return null;
     }
 
