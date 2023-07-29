@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_SandersHuis.unity
     guid: 1a24231bf6642f045ab36937d5f3c3a7
+  - enabled: 1
+    path: Assets/Scenes/WinScherm.unity
+    guid: b74e1665337cfea45956df3753821a7d
   m_configObjects: {}
