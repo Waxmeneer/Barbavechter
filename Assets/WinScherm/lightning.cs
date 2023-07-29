@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lightning : MonoBehaviour
+public class Lightning : MonoBehaviour
 {
     Light lightSource;
     public float minIntensity = 80.0f;

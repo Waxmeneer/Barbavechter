@@ -30,7 +30,7 @@ public class MenuManager : MonoBehaviour
     private int _secNumber;
     private string _name;
 
-    winnerAnnouncer announcer;
+    WinnerAnnouncer announcer;
     Sprite playerNameToSprite(string playerName)
     {
         Sprite playerSprite = spriteDaen;
@@ -93,7 +93,7 @@ public class MenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        announcer = FindObjectOfType<winnerAnnouncer>();
+        announcer = FindObjectOfType<WinnerAnnouncer>();
         StartCoroutine(LateStart());
     }
 

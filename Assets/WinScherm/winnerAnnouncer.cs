@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class winnerAnnouncer : MonoBehaviour
+public class WinnerAnnouncer : MonoBehaviour
 {
     public float delayTime = 2.5f;
     public float delayTime2 = 5.0f;
+    public float delayBackToMenu = 15.0f;
     public AudioClip winAnnouncerAudio;
     public AudioClip characterNameAudio;
     public AudioClip winScoreAudio;
@@ -41,6 +43,10 @@ public class winnerAnnouncer : MonoBehaviour
             audioData.volume = 0.4f;
             audioData.Play(0);
             state = 3;
+        }
+        if (Time.time > (_startTime + delayBackToMenu) && state == 3)
+        {
+            SceneManager.LoadScene(0);
         }
     }
 }
