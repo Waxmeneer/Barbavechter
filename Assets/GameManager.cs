@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public void StartFight(List<GameObject> selectedFighters)
     {
         // Called when the fight begins.
+        FighterManager.Instance.winnerDict.Clear();
         fighters.Clear(); // Ensure the list is empty before populating it.
         foreach (GameObject selectedFighter in selectedFighters)
         {
@@ -34,6 +35,8 @@ public class GameManager : MonoBehaviour
             fighters.Add(newFighter);
             // Set up any necessary components for the fighter.
             newFighter.GetComponent<PlayerHealth>().GetSpawnPoint();
+
+            FighterManager.Instance.winnerDict.Add(newFighter.GetComponent<PlayerHealth>().player, newFighter.GetComponent<PlayerHealth>().nameString);
         }
     }
 

@@ -13,6 +13,7 @@ public class Projectile : MonoBehaviour
     public float hitBoxDelay;
     public float hitBoxEnd;
     public float lifeTime;
+    public float hitCoolDown;
 
     private void Start()
     {
@@ -22,7 +23,7 @@ public class Projectile : MonoBehaviour
 
     IEnumerator SetHitBox()
     {
-        CapsuleCollider2D cc = GetComponent<CapsuleCollider2D>();
+        Collider2D cc = GetComponent<Collider2D>();
         yield return new WaitForSeconds(hitBoxDelay);
         cc.enabled = true;
         yield return new WaitForSeconds(hitBoxEnd);
@@ -56,7 +57,7 @@ public class Projectile : MonoBehaviour
     private IEnumerator HitCoolDown()
     {
         hitCooledDown = false;
-        yield return new WaitForSeconds(0.35f);
+        yield return new WaitForSeconds(hitCoolDown);
         hitCooledDown = true;
         yield return null;
     }

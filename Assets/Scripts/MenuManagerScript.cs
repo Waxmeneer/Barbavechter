@@ -43,14 +43,15 @@ public class MenuManagerScript : MonoBehaviour
         selectbuttons.Add(xanderSelect, xander);
         selectbuttons.Add(daenSelect, daen);
         selectbuttons.Add(walterSelect, walter);
-
-        foreach(KeyValuePair<Button, GameObject> pair in selectbuttons)
+        
+        foreach (KeyValuePair<Button, GameObject> pair in selectbuttons)
         {
             pair.Key.onClick.RemoveAllListeners();
             pair.Key.onClick.AddListener(delegate { FighterManager.Instance.ChooseFighter(pair.Value, currentPlayer); });
         }
-
         currentPlayer = 1;
+
+
         whichPlayer.text = "Speler 1, kies je vechter!";
     }
 
@@ -112,7 +113,19 @@ public class MenuManagerScript : MonoBehaviour
             whichPlayer.text = "Speler 2, kies je vechter!";
             whichPlayer.color = Color.blue;
         }
-        else if (currentPlayer == 2){
+        else if (currentPlayer == 2)
+        {
+            //currentPlayer = 2;
+            whichPlayer.text = "Speler 3, kies je vechter!";
+            whichPlayer.color = Color.green;
+        }
+        else if (currentPlayer == 3)
+        {
+            //currentPlayer = 2;
+            whichPlayer.text = "Speler 4, kies je vechter!";
+            whichPlayer.color = Color.magenta ;
+        }
+        else if (currentPlayer == 4){
             GoToStageSelect();
         }
         

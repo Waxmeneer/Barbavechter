@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4c3a96e40fa54a743a1716327c7a3275
+guid: 7271a67d308a2234185c78c90454437a
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +119,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: WouterSpriteBase
+  - name: WouterSpriteBase_Frame_0
     originalName: 
     pivot: {x: 0.5217391, y: 0}
     alignment: 9
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 23
       height: 32
-    spriteID: 4a1c143ae3ad98945821e3191a570fa4
+    spriteID: cc79c58993ca7834b9c1df11e6b82902
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,6 +139,26 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: WouterSpriteBase_Frame_1
+    originalName: 
+    pivot: {x: 0.5217391, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 4
+      width: 23
+      height: 32
+    spriteID: 939d82bb31277144a81ab3a87260bca1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -148,14 +168,22 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: WouterSpriteBase
+    - name: WouterSpriteBase_Frame_0
       frameIndex: 0
       cellRect:
         x: 4
         y: 0
         width: 23
         height: 32
-      spriteId: 4a1c143ae3ad98945821e3191a570fa4
+      spriteId: cc79c58993ca7834b9c1df11e6b82902
+    - name: WouterSpriteBase_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 4
+        y: 0
+        width: 23
+        height: 32
+      spriteId: 939d82bb31277144a81ab3a87260bca1
     linkedCells: []
     parentIndex: -1
   platformSettings: []

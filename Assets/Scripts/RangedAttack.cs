@@ -12,8 +12,11 @@ public class RangedAttack : MonoBehaviour
     public float attackEnd;
     private PlayerMovement playerMovement;
 
+    private KeyCode rangedAttackButton;
+
     private void Start()
     {
+        rangedAttackButton = GetComponent<PlayerMovement>().rangedAttackButton;
         playerMovement = GetComponent<PlayerMovement>();
         canAttack = true;
     }
@@ -21,7 +24,7 @@ public class RangedAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("y") && canAttack)
+        if (Input.GetKeyDown(rangedAttackButton) && canAttack)
         {
             StartCoroutine(DoAttack());
         }
@@ -32,7 +35,9 @@ public class RangedAttack : MonoBehaviour
         GetComponentInParent<PlayerMovement>().canMove = false;
         GetComponentInParent<Rigidbody2D>().velocity = Vector2.zero;
 
-        animator.SetBool("Attack", true);
+        animator.SetBool("RangedAttack", true);
+        yield return new WaitForEndOfFrame();
+        animator.SetBool("RangedAttack", false);
         canAttack = false;
 
         GameObject projectile = Instantiate(projectilePF, spawnLocation.position, Quaternion.identity);
@@ -47,8 +52,7 @@ public class RangedAttack : MonoBehaviour
         }
 
         yield return new WaitForSeconds(attackEnd);
-        animator.SetBool("Attack", false);
-
+      
         canAttack = true;
         GetComponentInParent<PlayerMovement>().canMove = true;
 

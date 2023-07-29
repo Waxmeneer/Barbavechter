@@ -15,13 +15,21 @@ public class MeleeAttack : MonoBehaviour
     public float hitBoxDelay;
     public float hitBoxEnd;
     public float attackEnd;
+    public float hitCoolDown;
 
     private bool hitCooledDown = true;
+
+    private KeyCode attackButton;
+
+    private void Start()
+    {
+        attackButton = GetComponentInParent<PlayerMovement>().attackButton;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("t") && canAttack)
+        if (Input.GetKeyDown(attackButton) && canAttack)
         {
             StartCoroutine(DoAttack());
         }
@@ -34,12 +42,14 @@ public class MeleeAttack : MonoBehaviour
 
         animator.SetBool("Attack", true);
         canAttack = false;
+        yield return new WaitForEndOfFrame();
+        animator.SetBool("Attack", false);
         yield return new WaitForSeconds(hitBoxDelay);
         gameObject.GetComponent<Collider2D>().enabled = true;
         yield return new WaitForSeconds(hitBoxEnd);
         gameObject.GetComponent<Collider2D>().enabled = false;
         yield return new WaitForSeconds(attackEnd);
-        animator.SetBool("Attack", false);
+        
 
         canAttack = true;
         GetComponentInParent<PlayerMovement>().canMove = true;
@@ -56,7 +66,7 @@ public class MeleeAttack : MonoBehaviour
 
             Vector2 self = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
             Vector2 otherLoc = new Vector2(otherCollider.transform.position.x, otherCollider.transform.position.y);
-            Vector2 dir = (Vector2)launchDir.position - self;
+            Vector2 dir = (Vector2)launchDir.position - otherLoc;
 
             float percentage = otherCollider.GetComponent<PlayerHealth>().percentage;
 
@@ -71,7 +81,7 @@ public class MeleeAttack : MonoBehaviour
     private IEnumerator HitCoolDown()
     {
         hitCooledDown = false;
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(hitCoolDown);
         hitCooledDown = true;
         yield return null;
     }

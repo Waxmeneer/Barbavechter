@@ -12,4 +12,9 @@ public class PlayerUI : MonoBehaviour
     public TMP_Text percentage;
     public Animator animator;
     public int player;
+
+    public void SetPortrait(Sprite portrait)
+    {
+        playerFace.sprite = portrait;
+    }
 }

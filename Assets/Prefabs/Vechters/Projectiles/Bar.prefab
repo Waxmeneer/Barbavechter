@@ -105,9 +105,10 @@ MonoBehaviour:
   launchDir: {fileID: 1089582342162624662}
   audioClips:
   - {fileID: 8300000, guid: e5f0b3373ab086145ab062adc9e54628, type: 3}
-  hitBoxDelay: 0.05
+  hitBoxDelay: 0.15
   hitBoxEnd: 3
   lifeTime: 1
+  hitCoolDown: 1
 --- !u!70 &5510701987525039141
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
