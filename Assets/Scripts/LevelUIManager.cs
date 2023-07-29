@@ -92,7 +92,7 @@ public class LevelUIManager : MonoBehaviour
         }
         if (player == 4 && lives != 0)
         {
-            player1UI.playerLives[lives - 1].enabled = false;
+            player4UI.playerLives[lives - 1].enabled = false;
         }
 
         //delete life code here
