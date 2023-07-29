@@ -16,9 +16,5 @@ public class PlayerUI : MonoBehaviour
     public void SetPortrait(Sprite portrait)
     {
         playerFace.sprite = portrait;
-        //foreach(Image image in playerLives)
-        //{
-        //    image = portrait;
-        //}
     }
 }
