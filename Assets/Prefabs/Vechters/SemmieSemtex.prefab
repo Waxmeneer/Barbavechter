@@ -395,6 +395,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  attackButton: 0
+  rangedAttackButton: 0
 --- !u!114 &6433518491277296161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,10 +411,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives: 0
   percentage: 0
-  player: 0
+  player: 1
   spawnPoint: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 1c8011050120ba04c901304eb6ec9b9e, type: 3}
   takeDamageSound: {fileID: 8300000, guid: 119669446c7004d478c3c250b0b9036c, type: 3}
+  portrait: {fileID: 0}
+  nameString: SemmySemtex
 --- !u!114 &3980447549975545909
 MonoBehaviour:
   m_ObjectHideFlags: 0

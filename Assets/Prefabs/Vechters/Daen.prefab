@@ -196,6 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89f7765ecece4bc4599624a5716407b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFacingRight: 1
   animator: {fileID: 0}
   canMove: 0
   OnLandEvent:
@@ -218,6 +219,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  attackButton: 0
+  rangedAttackButton: 0
 --- !u!95 &3358112433395960450
 Animator:
   serializedVersion: 5
@@ -257,6 +260,8 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 9ae6c9d3bdf86cf4f9e2a209d6e5d7e2, type: 3}
   takeDamageSound: {fileID: 0}
+  portrait: {fileID: 0}
+  nameString: Daen
 --- !u!1 &2584755381756651441
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +354,7 @@ MonoBehaviour:
   hitBoxDelay: 0
   hitBoxEnd: 0.1
   attackEnd: 0.15
+  hitCoolDown: 0
 --- !u!1 &6466020389437072614
 GameObject:
   m_ObjectHideFlags: 0
