@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 3546418885825044453}
   - component: {fileID: 3501434088797694852}
   - component: {fileID: 6184511769008269}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Xander
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +451,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3.5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d1f3fbfcaf05822468fd7466bad28a3b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -542,10 +542,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 7664270749830142877}
-  projectilePF: {fileID: 6497562306490212284, guid: 0d47a443c1325d34b8c9192391e7ad88,
+  projectilePF: {fileID: 7330998811736852367, guid: 18fdf7f9fa0c2a041a201fb4b0855360,
     type: 3}
   spawnLocation: {fileID: 2470616556272759828}
-  force: 1.6
+  force: 12
   attackEnd: 0.8
 --- !u!1 &4510396522745747315
 GameObject:

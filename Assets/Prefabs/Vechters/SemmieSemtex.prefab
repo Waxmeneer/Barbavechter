@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 5845642207207712031}
   - component: {fileID: 6433518491277296161}
   - component: {fileID: 3980447549975545909}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SemmieSemtex
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +342,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3.5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d1f3fbfcaf05822468fd7466bad28a3b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -436,5 +436,5 @@ MonoBehaviour:
   projectilePF: {fileID: 6497562306490212284, guid: 0d47a443c1325d34b8c9192391e7ad88,
     type: 3}
   spawnLocation: {fileID: 9214416445131422254}
-  force: 1.6
+  force: 12
   attackEnd: 0.8

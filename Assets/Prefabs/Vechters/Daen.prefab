@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 3358112433395960450}
   - component: {fileID: 5232544709081790928}
   - component: {fileID: -4658498940656755907}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Daen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3.5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d1f3fbfcaf05822468fd7466bad28a3b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -281,7 +281,7 @@ MonoBehaviour:
   projectilePF: {fileID: 865573636184572915, guid: be67561d5b0705e4abbabb01b97138ad,
     type: 3}
   spawnLocation: {fileID: 7303814623742194842}
-  force: 1.6
+  force: 12
   attackEnd: 0.8
 --- !u!1 &2584755381756651441
 GameObject:

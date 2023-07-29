@@ -39,7 +39,7 @@ public class Projectile : MonoBehaviour
         if (otherCollider.gameObject.GetComponent<Rigidbody2D>() != null && hitCooledDown == true)
         {
             SoundManager.Instance.PlaySound(PickRandomHitSound());
-            StartCoroutine(otherCollider.GetComponent<PlayerMovement>().GotHit(0.5f));
+            StartCoroutine(otherCollider.GetComponent<PlayerMovement>().GotHit(1f));
             Vector2 self = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
             Vector2 otherLoc = new Vector2(otherCollider.transform.position.x, otherCollider.transform.position.y);
             Vector2 dir = (Vector2)launchDir.position - self;

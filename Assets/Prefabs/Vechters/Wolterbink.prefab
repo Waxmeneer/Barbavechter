@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4204033916644745049}
   - component: {fileID: 7621077731455269662}
   - component: {fileID: 5026482996685790557}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wolterbink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3.5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d1f3fbfcaf05822468fd7466bad28a3b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
   projectilePF: {fileID: 2088218466772026625, guid: 2f7c7b7eabc019e4f81d7dc93eb2a309,
     type: 3}
   spawnLocation: {fileID: 1317869195448682478}
-  force: 1.6
+  force: 12
   attackEnd: 0.8
 --- !u!1 &2953490293653793540
 GameObject:
